@@ -1,0 +1,3 @@
+com\wxr\service\PaymentService.class
+com\wxr\PaymentHystrixMain8001.class
+com\wxr\controller\PaymentController.class

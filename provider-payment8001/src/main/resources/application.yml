@@ -1,0 +1,36 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: payment-service
+  zipkin:
+    base-url: http://localhost:9411
+    sleuth:
+      sampler:
+      probability: 1
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.98.170.14:3389/qzf_test?useUnicode=true&characterEncoding=utf8&&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+    username: root
+    password: wxr@123
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.wxr.domain
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+      defaultZone: http://eureka7001.com:7001/eureka  #单机版
+    instance:
+      instance-id: payment8001 #服务名称修改
+      prefer-ip-address: true #显示IP
+      #eureka 客户端向服务端发送心跳的间隔时间，单位秒。默认（30秒）
+      lease-expiration-duration-in-seconds: 1
+      #eureka 服务端向收到最后一次心跳的等待时间上线，单位秒。默认（90秒）
+      lease-renewal-interval-in-seconds: 2
+
+

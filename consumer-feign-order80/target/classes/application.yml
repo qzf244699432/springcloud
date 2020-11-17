@@ -1,0 +1,18 @@
+server:
+  port: 80
+spring:
+  application:
+    name: order-service
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+ribbon:
+  #建立连接所用的时间，是指网络正常的情况下。
+  ReadTimeout: 5000
+  #建立连接后从服务器读取资源所用的时间
+  ConnerctionTimeout: 5000
+logging:
+  level:
+    com.wxr.service.PaymenFeignService: debug

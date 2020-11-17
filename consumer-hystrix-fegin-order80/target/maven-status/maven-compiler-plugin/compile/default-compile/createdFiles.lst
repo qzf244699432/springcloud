@@ -1,0 +1,4 @@
+com\wxr\controller\OrderHystrixController.class
+com\wxr\service\PaymentFallbackService.class
+com\wxr\OrderHystrixMain80.class
+com\wxr\service\PaymentHystrixService.class

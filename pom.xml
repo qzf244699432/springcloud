@@ -19,6 +19,8 @@
         <module>consumer-hystrix-fegin-order80</module>
         <module>cloud-gateway-gateway9527</module>
         <module>cloudalibaba-provider-payment9001</module>
+        <module>cloudalibaba-consumer-nacos-order83</module>
+        <module>cloudalibaba-config-nacos-client3377</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 统一管理jar包版本 -->

@@ -11,10 +11,12 @@
         <module name="cloudalibaba-provider-payment9001" />
         <module name="cloud-eureka-server7001" />
         <module name="consumer-feign-order80" />
+        <module name="cloudalibaba-config-nacos-client3377" />
         <module name="consumer-hystrix-fegin-order80" />
         <module name="cloud-gateway-gateway9527" />
         <module name="provider-payment8002" />
         <module name="provider-payment8001" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="consumer-order80" />
         <module name="api-commons" />
         <module name="provider-hystrix-payment8001" />

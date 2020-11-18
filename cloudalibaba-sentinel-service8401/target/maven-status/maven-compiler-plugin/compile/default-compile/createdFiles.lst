@@ -1,2 +1,4 @@
+com\wxr\myhandle\CustomerBlockHandler.class
 com\wxr\controller\FlowLimitController.class
 com\wxr\MainApp8401.class
+com\wxr\controller\RateLimitController.class
